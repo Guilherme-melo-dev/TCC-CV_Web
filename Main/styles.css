@@ -1,0 +1,199 @@
+.container-initial{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+        "_initial"
+        "_institutions"
+        "_campaigns"
+        "_about";
+}
+
+/* Estilos página inicial */
+
+.container-content-initial {
+    grid-area: _initial;
+    display: flex;
+    height: 60vh;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+#texts-home {
+    max-width: 750px;
+}
+
+#title-initial {
+     font-family: Alata;
+     font-size: 60px;
+     font-weight: bold;
+     margin: 20px 0;
+}
+#desc-initial {
+     font-family: Alata;
+     font-size: 25px;   
+}
+#btnCon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 50px;
+    margin: 30px 0;
+    color: white;
+    font-size: 20px;
+    border: transparent;
+    outline: none;
+    box-shadow: 8px 8px 10px #514F4F;
+    background: var(--background-button)   
+}
+
+#Image-home {
+    margin: 5% 0;
+    
+}
+
+img {
+    display: flex;
+    height: 550px;
+}
+
+
+/* Estilos página instituições */
+#texts-instituicao{
+    max-width: 600px;
+}
+
+.container-Institutions {
+    grid-area: _institutions;
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background:rgb(255, 255, 255);    
+}
+
+#linha{
+  width: 350px;  
+  border-top: 3px dashed #E26868;  
+  margin-bottom: 15px;
+}
+
+
+
+#btnIns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 40px;
+    margin: 30px 0;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    border: transparent;
+    box-shadow: 8px 8px 10px #514F4F;
+    outline: none;
+    background: var(--background-button)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos página Campanhas */
+
+.container-campaigns{
+    grid-area: _campaigns;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    flex: 1;
+    width: 100%;
+    justify-content: right;
+    text-align: right;
+    align-items: right;
+}
+
+#container-texts-camp {
+    margin: 0 5% 10% 45%;
+    max-width: 750px;
+}
+
+#title-page-camp {
+    font-size: 45px;
+    font-family: Alata;
+    font-weight: bold;
+    margin: 10px 0;
+}
+#desc-page-camp {
+    font-family: Alata;
+     font-size: 23px;
+    
+}
+
+#linhaCamp{
+    width: 350px;  
+    border-top: 3px dashed #E26868;     
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    margin: 0 5% 10% 53%;
+    
+  }
+
+#container-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#containercard {
+    max-width: 500px;
+    height: 400px;
+    margin: 0 30px;
+    background: var(--background-cards);
+    box-shadow: 10px 10px 20px rgb(58, 11, 11);
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+}
+#content {
+    padding: 0 20px;
+    max-width: 400px;
+    flex-wrap: wrap;
+    
+}
+#desc-card {
+    max-width: 400px;
+    flex-wrap: wrap;
+}
+
+/* Estilos página Sobre a empresa */
+
+.container-about{
+    grid-area: _about;
+    display: flex;
+    height: 100vh;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background: green;
+}
